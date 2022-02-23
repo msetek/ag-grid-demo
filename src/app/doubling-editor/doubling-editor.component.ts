@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
+import { AfterViewInit, Component, ViewChild, ViewContainerRef } from '@angular/core';
 import { ICellEditorAngularComp } from 'ag-grid-angular';
 import { ICellEditorParams } from 'ag-grid-community';
 
@@ -8,7 +8,7 @@ import { ICellEditorParams } from 'ag-grid-community';
   styleUrls: ['./doubling-editor.component.scss']
 })
 export class DoublingEditorComponent implements ICellEditorAngularComp, AfterViewInit  {
-  private params: any;
+  private params!: ICellEditorParams;
   public value!: number;
 
   @ViewChild('input', { read: ViewContainerRef }) public input!: ViewContainerRef;
