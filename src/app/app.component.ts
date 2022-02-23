@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ColDef } from 'ag-grid-community';
+import { DoublingEditorComponent } from './doubling-editor/doubling-editor.component';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,7 @@ export class AppComponent {
   columnDefs: ColDef[] = [
     { field: 'make' },
     { field: 'model' },
-    { field: 'price'}
+    { field: 'price', editable: true, cellEditor: DoublingEditorComponent }
   ];
 
   rowData = [

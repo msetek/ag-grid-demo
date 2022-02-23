@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AgGridModule } from 'ag-grid-angular';
+import { DoublingEditorComponent } from './doubling-editor/doubling-editor.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DoublingEditorComponent
   ],
   imports: [
     BrowserModule,
